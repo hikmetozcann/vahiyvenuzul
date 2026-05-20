@@ -1,0 +1,14 @@
+id: ibn-hisham
+category: sira
+title:
+  tr: "es-Sîretü'n-Nebeviyye"
+  en: "Al-Sira al-Nabawiyya"
+  ar: "السيرة النبوية"
+author:
+  tr: "İbn Hişâm (İbn İshâk'tan)"
+  en: "Ibn Hisham (recension of Ibn Ishaq)"
+  ar: "ابن هشام"
+authorDeathHijri: 218
+description:
+  tr: "İbn İshâk'ın Meğâzî'sini tertip edip aktaran en eski tam siyer kaynağı."
+language: ar

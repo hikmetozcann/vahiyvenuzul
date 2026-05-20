@@ -1,0 +1,18 @@
+number: 74
+name:
+  tr: "Müddessir Sûresi"
+  en: "Surah Al-Muddaththir"
+  ar: "سورة المدثر"
+arabicName: "المدثر"
+revelationOrder: 4
+place: meccan
+ayahCount: 56
+notes:
+  tr: "Fetret-i vahyin ardından inen ilk sûre. İlk yedi ayet tebliğin başlangıcını işaret eder."
+sources:
+  - sourceId: bukhari
+    hadithNumber: 4
+    grade: sahih
+  - sourceId: muslim
+    hadithNumber: 161
+    grade: sahih

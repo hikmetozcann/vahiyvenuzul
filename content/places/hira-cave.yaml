@@ -1,0 +1,13 @@
+id: hira-cave
+name:
+  tr: "Hira Mağarası"
+  en: "Cave of Hira"
+  ar: "غار حراء"
+region:
+  tr: "Cebel-i Nûr, Mekke"
+modernCountry: "SA"
+coordinates:
+  lat: 21.4581
+  lng: 39.8597
+description:
+  tr: "Vahyin ilk indiği mağara. Mekke'nin kuzeydoğusundaki Nûr Dağı'nda bulunur."

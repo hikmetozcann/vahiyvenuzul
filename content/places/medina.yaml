@@ -1,0 +1,11 @@
+id: medina
+name:
+  tr: "Medine"
+  en: "Medina"
+  ar: "المدينة المنورة"
+region:
+  tr: "Hicaz"
+modernCountry: "SA"
+coordinates:
+  lat: 24.4672
+  lng: 39.6111

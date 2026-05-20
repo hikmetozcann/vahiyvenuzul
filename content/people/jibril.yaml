@@ -1,0 +1,13 @@
+id: jibril
+name:
+  tr: "Cebrâil (a.s.)"
+  en: "Gabriel (Jibril)"
+  ar: "جبريل عليه السلام"
+roles: [angel]
+sources:
+  - sourceId: quran
+    ayahReference: "2:97"
+    grade: quran
+  - sourceId: bukhari
+    hadithNumber: 3
+    grade: sahih

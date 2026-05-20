@@ -1,0 +1,23 @@
+id: muhammad
+name:
+  tr: "Hz. Muhammed ﷺ"
+  en: "The Prophet Muhammad ﷺ"
+  ar: "محمد ﷺ"
+kunya:
+  tr: "Ebu'l-Kâsım"
+  en: "Abu al-Qasim"
+  ar: "أبو القاسم"
+nasab:
+  tr: "Muhammed b. Abdullâh b. Abdülmuttalib"
+  ar: "محمد بن عبد الله بن عبد المطلب"
+roles: [prophet]
+birthYearGregorian: 570
+deathYearHijri: 11
+deathYearGregorian: 632
+sources:
+  - sourceId: bukhari
+    grade: mutawatir
+    note:
+      tr: "Hayatına dair rivayetler tevatür derecesindedir."
+  - sourceId: ibn-hisham
+    grade: sahih

@@ -1,0 +1,12 @@
+id: mecca
+name:
+  tr: "Mekke"
+  en: "Mecca"
+  ar: "مكة المكرمة"
+region:
+  tr: "Hicaz"
+  en: "Hejaz"
+modernCountry: "SA"
+coordinates:
+  lat: 21.4225
+  lng: 39.8262

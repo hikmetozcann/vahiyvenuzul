@@ -1,0 +1,18 @@
+number: 96
+name:
+  tr: "Alak Sûresi"
+  en: "Surah Al-'Alaq"
+  ar: "سورة العلق"
+arabicName: "العلق"
+revelationOrder: 1
+place: meccan
+ayahCount: 19
+notes:
+  tr: "İlk inen ayetler bu sûrenin ilk beş ayetidir. Sûrenin kalanı sonradan inmiştir."
+sources:
+  - sourceId: bukhari
+    hadithNumber: 3
+    grade: sahih
+  - sourceId: muslim
+    hadithNumber: 160
+    grade: sahih

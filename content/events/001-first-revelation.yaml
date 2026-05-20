@@ -1,0 +1,45 @@
+id: first-revelation
+type: revelation
+title:
+  tr: "İlk Vahiy — Alak Sûresinin İlk Beş Âyeti"
+  en: "The First Revelation — Opening Verses of Surah Al-'Alaq"
+  ar: "أول وحي — مطلع سورة العلق"
+summary:
+  tr: "Hira Mağarası'nda Cebrâil (a.s.)'ın gelişi ve ilk beş ayetin inişi."
+  en: "Gabriel's first descent in the Cave of Hira and the revelation of the first five verses."
+  ar: "نزول جبريل في غار حراء ونزول الآيات الخمس الأولى."
+description:
+  tr: |
+    Peygamber Efendimiz Hira Mağarası'nda inzivada iken Cebrâil (a.s.) gelip
+    "İkra!" (Oku!) emrini verdi. Üç kez sıkıştırdıktan sonra Alak sûresinin
+    ilk beş ayetini okudu. Efendimiz titreyerek Hz. Hatice'ye döndü;
+    Hatice onu Varaka b. Nevfel'e götürdü, o da bunun Mûsâ (a.s.)'a gelen
+    Nâmûs olduğunu söyledi.
+date:
+  gregorianYear: 610
+  gregorianMonth: 8
+  yearFromBirth: 40
+  yearFromProphethood: 0
+  approximate: true
+  note: "Genel kabul Ramazan / Milâdî Ağustos 610."
+placeId: hira-cave
+peopleIds: [muhammad, jibril, khadija]
+ayahReferences: ["96:1-5"]
+occasionOfRevelation:
+  tr: |
+    Vahyin başlangıç olayıdır. Hz. Âişe'nin Buhârî ve Müslim'de geçen
+    rivayetine göre Efendimiz'e ilk vahiy "sâlih rüya" şeklinde başlamış,
+    ardından Hira'da yalnızlığı sevdirilmiştir.
+sources:
+  - sourceId: bukhari
+    hadithNumber: 3
+    grade: sahih
+    note:
+      tr: "Bed'ü'l-Vahy bölümünün ilk hadisi; Hz. Âişe'den."
+  - sourceId: muslim
+    hadithNumber: 160
+    grade: sahih
+  - sourceId: ibn-hisham
+    volume: 1
+    grade: sahih
+contested: false

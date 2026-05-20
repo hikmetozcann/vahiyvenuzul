@@ -1,0 +1,46 @@
+{
+  "site": {
+    "title": "Revelation & Descent",
+    "tagline": "A chronological, source-attested timeline of Islamic history"
+  },
+  "nav": {
+    "timeline": "Timeline",
+    "events": "Events",
+    "surahs": "Surahs",
+    "people": "People",
+    "sources": "Sources",
+    "about": "About"
+  },
+  "home": {
+    "heroTitle": "Chronology of the Prophetic Era",
+    "heroSubtitle": "Every event, every revelation, every cause — with verified sources.",
+    "enterTimeline": "Enter Timeline"
+  },
+  "timeline": {
+    "title": "Timeline",
+    "filterAll": "All",
+    "filterRevelation": "Revelation",
+    "filterBattle": "Battle",
+    "filterMigration": "Migration",
+    "filterTreaty": "Treaty",
+    "filterLife": "Life"
+  },
+  "event": {
+    "date": "Date",
+    "location": "Location",
+    "people": "People",
+    "verses": "Verses",
+    "occasion": "Occasion of revelation",
+    "sources": "Sources",
+    "grade": "Authenticity",
+    "grade_sahih": "Sahih",
+    "grade_hasan": "Hasan",
+    "grade_daif": "Da'if",
+    "grade_mutawatir": "Mutawatir",
+    "grade_quran": "Qur'an"
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "comingSoon": "Admin panel coming soon. Content is currently submitted via PR."
+  }
+}

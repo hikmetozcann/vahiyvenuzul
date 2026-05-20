@@ -1,0 +1,15 @@
+surah: 96
+ayah: 1
+textArabic: "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+translation:
+  tr: "Yaratan Rabbinin adıyla oku."
+  en: "Read in the name of your Lord who created."
+revelationStage: early-meccan
+occasionEventId: first-revelation
+sources:
+  - sourceId: quran
+    ayahReference: "96:1"
+    grade: quran
+  - sourceId: bukhari
+    hadithNumber: 3
+    grade: sahih

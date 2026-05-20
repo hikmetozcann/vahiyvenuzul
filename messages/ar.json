@@ -1,0 +1,46 @@
+{
+  "site": {
+    "title": "الوحي والنزول",
+    "tagline": "تسلسل زمني للتاريخ الإسلامي بمصادر موثقة"
+  },
+  "nav": {
+    "timeline": "التسلسل الزمني",
+    "events": "الأحداث",
+    "surahs": "السور",
+    "people": "الأشخاص",
+    "sources": "المصادر",
+    "about": "حول"
+  },
+  "home": {
+    "heroTitle": "تسلسل عصر النبوة",
+    "heroSubtitle": "كل حدث، كل وحي، كل سبب — بمصادر صحيحة.",
+    "enterTimeline": "ادخل التسلسل الزمني"
+  },
+  "timeline": {
+    "title": "التسلسل الزمني",
+    "filterAll": "الكل",
+    "filterRevelation": "وحي",
+    "filterBattle": "غزوة",
+    "filterMigration": "هجرة",
+    "filterTreaty": "معاهدة",
+    "filterLife": "حياة"
+  },
+  "event": {
+    "date": "التاريخ",
+    "location": "المكان",
+    "people": "الأشخاص",
+    "verses": "الآيات",
+    "occasion": "سبب النزول",
+    "sources": "المصادر",
+    "grade": "الصحة",
+    "grade_sahih": "صحيح",
+    "grade_hasan": "حسن",
+    "grade_daif": "ضعيف",
+    "grade_mutawatir": "متواتر",
+    "grade_quran": "قرآن"
+  },
+  "admin": {
+    "title": "لوحة الإدارة",
+    "comingSoon": "لوحة الإدارة قريبًا. يتم إدخال المحتوى حاليًا عبر طلبات السحب."
+  }
+}

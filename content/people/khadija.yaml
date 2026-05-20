@@ -1,0 +1,14 @@
+id: khadija
+name:
+  tr: "Hz. Hatice"
+  en: "Khadijah bint Khuwaylid"
+  ar: "خديجة بنت خويلد"
+roles: [wife, family]
+deathYearGregorian: 619
+sources:
+  - sourceId: bukhari
+    volume: 1
+    hadithNumber: 3
+    grade: sahih
+  - sourceId: ibn-hisham
+    grade: sahih

@@ -1,0 +1,28 @@
+id: fatrat-al-wahy
+type: life
+title:
+  tr: "Fetretü'l-Vahiy"
+  en: "The Pause in Revelation"
+  ar: "فترة الوحي"
+summary:
+  tr: "İlk vahyin ardından bir süre vahyin kesilmesi."
+  en: "A period after the first revelation in which revelation paused."
+  ar: "انقطاع الوحي مدة بعد أول نزول."
+date:
+  gregorianYear: 610
+  yearFromBirth: 40
+  yearFromProphethood: 0
+  approximate: true
+placeId: mecca
+peopleIds: [muhammad]
+relations:
+  - kind: caused-by
+    eventId: first-revelation
+  - kind: led-to
+    eventId: muddaththir-revelation
+sources:
+  - sourceId: bukhari
+    hadithNumber: 4
+    grade: sahih
+  - sourceId: ibn-hisham
+    grade: sahih

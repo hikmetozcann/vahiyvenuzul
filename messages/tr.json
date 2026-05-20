@@ -1,0 +1,46 @@
+{
+  "site": {
+    "title": "Vahiy ve Nüzul",
+    "tagline": "İslam tarihinin kronolojik, kaynak destekli zaman çizgisi"
+  },
+  "nav": {
+    "timeline": "Zaman Çizgisi",
+    "events": "Olaylar",
+    "surahs": "Sureler",
+    "people": "Şahıslar",
+    "sources": "Kaynaklar",
+    "about": "Hakkında"
+  },
+  "home": {
+    "heroTitle": "Peygamberlik Döneminin Kronolojisi",
+    "heroSubtitle": "Her olay, her vahiy, her sebep — sahih kaynaklarla.",
+    "enterTimeline": "Zaman Çizgisine Gir"
+  },
+  "timeline": {
+    "title": "Zaman Çizgisi",
+    "filterAll": "Tümü",
+    "filterRevelation": "Vahiy",
+    "filterBattle": "Gazve",
+    "filterMigration": "Hicret",
+    "filterTreaty": "Antlaşma",
+    "filterLife": "Hayat"
+  },
+  "event": {
+    "date": "Tarih",
+    "location": "Mekân",
+    "people": "İlgili Şahıslar",
+    "verses": "İlgili Ayetler",
+    "occasion": "Nüzul Sebebi",
+    "sources": "Kaynaklar",
+    "grade": "Sıhhat",
+    "grade_sahih": "Sahih",
+    "grade_hasan": "Hasen",
+    "grade_daif": "Zayıf",
+    "grade_mutawatir": "Mütevâtir",
+    "grade_quran": "Kur'ân"
+  },
+  "admin": {
+    "title": "Yönetim Paneli",
+    "comingSoon": "Yönetim paneli yakında. Şimdilik içerik PR yoluyla giriliyor."
+  }
+}

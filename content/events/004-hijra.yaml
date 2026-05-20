@@ -1,0 +1,26 @@
+id: hijra
+type: migration
+title:
+  tr: "Hicret — Mekke'den Medine'ye"
+  en: "The Hijra — Migration from Mecca to Medina"
+  ar: "الهجرة من مكة إلى المدينة"
+summary:
+  tr: "Peygamberimizin Hz. Ebû Bekir ile birlikte Mekke'den Medine'ye hicreti; İslâmî takvimin başlangıcı."
+  en: "The Prophet's migration to Medina with Abu Bakr, marking the start of the Islamic calendar."
+  ar: "هجرة النبي ﷺ مع أبي بكر إلى المدينة، وبدء التقويم الهجري."
+date:
+  hijri: "1"
+  gregorianYear: 622
+  yearFromBirth: 52
+  yearFromProphethood: 13
+placeId: medina
+peopleIds: [muhammad]
+relations:
+  - kind: preceded-by
+    eventId: muddaththir-revelation
+sources:
+  - sourceId: bukhari
+    hadithNumber: 3905
+    grade: sahih
+  - sourceId: ibn-hisham
+    grade: sahih

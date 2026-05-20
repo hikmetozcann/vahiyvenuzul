@@ -1,0 +1,36 @@
+id: muddaththir-revelation
+type: revelation
+title:
+  tr: "Müddessir Sûresinin İnişi — Tebliğin Başlangıcı"
+  en: "Revelation of Surah Al-Muddaththir — Beginning of the Mission"
+  ar: "نزول سورة المدثر — بداية الدعوة"
+summary:
+  tr: "Fetret döneminin ardından inen ve tebliğ emrini taşıyan ilk ayetler."
+  en: "The first verses revealed after the pause, commanding the Prophet to begin proclamation."
+  ar: "أول ما نزل بعد فترة الوحي بأمر القيام والإنذار."
+date:
+  gregorianYear: 610
+  yearFromBirth: 40
+  yearFromProphethood: 0
+  approximate: true
+placeId: mecca
+peopleIds: [muhammad, jibril]
+ayahReferences: ["74:1-7"]
+occasionOfRevelation:
+  tr: |
+    Buhârî ve Müslim'in Câbir b. Abdullah'tan naklettiğine göre Efendimiz
+    fetret döneminde Hira'dan dönerken Cebrâil'i yer ile gök arasında bir
+    kürsîde gördü, korkup eve gelip "Beni örtün!" dedi. Bunun üzerine
+    "Ey örtüye bürünen! Kalk ve uyar!" ayetleri nâzil oldu.
+relations:
+  - kind: preceded-by
+    eventId: fatrat-al-wahy
+sources:
+  - sourceId: bukhari
+    hadithNumber: 4
+    grade: sahih
+  - sourceId: muslim
+    hadithNumber: 161
+    grade: sahih
+  - sourceId: wahidi-asbab
+    grade: sahih

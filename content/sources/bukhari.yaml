@@ -1,0 +1,15 @@
+id: bukhari
+category: hadith
+title:
+  tr: "Sahîh-i Buhârî"
+  en: "Sahih al-Bukhari"
+  ar: "صحيح البخاري"
+author:
+  tr: "Muhammed b. İsmâil el-Buhârî"
+  en: "Muhammad ibn Isma'il al-Bukhari"
+  ar: "محمد بن إسماعيل البخاري"
+authorDeathHijri: 256
+description:
+  tr: "Sünnî hadis literatürünün en sahih ikinci kaynağı kabul edilen el-Câmiu's-Sahîh."
+  en: "Al-Jami' al-Sahih, considered the most authentic hadith compilation in Sunni tradition."
+language: ar
