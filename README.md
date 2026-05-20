@@ -54,6 +54,16 @@ npm run typecheck
 - `daif` — Zayıf (gösterilir ama uyarıyla)
 - `mawdu` — Mevzû (uydurma) — sadece reddiye için
 
+## Deploy (GitHub Pages)
+
+Repo, `claude/islamic-history-timeline-Qbb7f` veya `main` dalına her push'ta GitHub Pages'e otomatik deploy edilir (`.github/workflows/deploy-pages.yml`). Tek seferlik kurulum:
+
+1. Repo ayarları → **Settings → Pages**
+2. **Source**: "GitHub Actions" seçili olmalı (deploy-from-branch değil)
+3. İlk push sonrası workflow `Actions` sekmesinde çalışır; bitince URL: `https://<user>.github.io/vahiyvenuzul/`
+
+Statik export kullandığı için runtime sunucu yok — middleware/redirect/SSR yok. Admin paneli sunucu gerektireceği için Vercel veya benzeri host'a geçişe gerek olacak.
+
 ## Genişletme
 
 - Yeni olay türü → `src/schemas/event.ts` içindeki `EventType` enum'una ekle + `messages/*.json`'a filtre etiketi.
