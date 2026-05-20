@@ -23,7 +23,9 @@
     "filterBattle": "Gazve",
     "filterMigration": "Hicret",
     "filterTreaty": "Antlaşma",
-    "filterLife": "Hayat"
+    "filterLife": "Hayat",
+    "hint": "Sürükle ile gez · Çift parmakla / tekerlekle yakınlaştır · Klavye: ← → + − Space Esc",
+    "empty": "Bu filtre için olay yok."
   },
   "event": {
     "date": "Tarih",

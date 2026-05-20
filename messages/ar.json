@@ -23,7 +23,9 @@
     "filterBattle": "غزوة",
     "filterMigration": "هجرة",
     "filterTreaty": "معاهدة",
-    "filterLife": "حياة"
+    "filterLife": "حياة",
+    "hint": "اسحب للتنقل · اضغط بإصبعين / استخدم العجلة للتكبير · الاختصارات: ← → + − Space Esc",
+    "empty": "لا توجد أحداث لهذا الفلتر."
   },
   "event": {
     "date": "التاريخ",

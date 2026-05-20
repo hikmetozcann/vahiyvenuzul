@@ -23,7 +23,9 @@
     "filterBattle": "Battle",
     "filterMigration": "Migration",
     "filterTreaty": "Treaty",
-    "filterLife": "Life"
+    "filterLife": "Life",
+    "hint": "Drag to pan · Pinch / scroll to zoom · Keys: ← → + − Space Esc",
+    "empty": "No events for this filter."
   },
   "event": {
     "date": "Date",
