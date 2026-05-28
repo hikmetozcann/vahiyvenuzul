@@ -1,0 +1,13 @@
+id: badr
+name:
+  tr: "Bedir"
+  en: "Badr"
+  ar: "بدر"
+region:
+  tr: "Hicaz"
+modernCountry: "SA"
+coordinates:
+  lat: 23.7833
+  lng: 38.7833
+description:
+  tr: "Medine'nin güneybatısında, ilk büyük gazvenin yapıldığı kuyular bölgesi."

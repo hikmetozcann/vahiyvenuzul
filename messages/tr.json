@@ -13,8 +13,18 @@
   },
   "home": {
     "heroTitle": "Peygamberlik Döneminin Kronolojisi",
-    "heroSubtitle": "Her olay, her vahiy, her sebep — sahih kaynaklarla.",
-    "enterTimeline": "Zaman Çizgisine Gir"
+    "heroSubtitle": "Her olay, her vahiy, her sebep — sahih kaynaklarla. Hira'dan Medine'ye uzanan yıllar tek bir zaman çizgisinde, ilgili tüm kaynak referanslarıyla.",
+    "enterTimeline": "Zaman Çizgisine Gir",
+    "statEvents": "Olay",
+    "statPlaces": "Mekân",
+    "statSources": "Kaynak",
+    "modeTimelineKicker": "Tarayıcı",
+    "modeTimelineTitle": "Kronolojik Zaman Çizgisi",
+    "modeTimelineDesc": "Yatay zaman ekseni üzerinde olaylar, türlerine göre lane'lerde. Yakınlaştır, filtrele, her olay için kaynakları gör.",
+    "modeJourneyKicker": "Sinematik",
+    "modeJourneyTitle": "Harita Yolculuğu",
+    "modeJourneyDesc": "Olayları haritada sırayla gezin — kamera mekanına gider, hicret rotaları çizilir, anlatım eşlik eder.",
+    "modeOpen": "Aç"
   },
   "timeline": {
     "title": "Zaman Çizgisi",
@@ -44,5 +54,14 @@
   "admin": {
     "title": "Yönetim Paneli",
     "comingSoon": "Yönetim paneli yakında. Şimdilik içerik PR yoluyla giriliyor."
+  },
+  "journey": {
+    "label": "Harita Yolculuğu",
+    "open": "Harita Yolculuğu",
+    "play": "Oynat",
+    "pause": "Duraklat",
+    "prev": "Önceki",
+    "next": "Sonraki",
+    "close": "Kapat"
   }
 }

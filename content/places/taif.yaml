@@ -1,0 +1,13 @@
+id: taif
+name:
+  tr: "Tâif"
+  en: "Tā'if"
+  ar: "الطائف"
+region:
+  tr: "Hicaz"
+modernCountry: "SA"
+coordinates:
+  lat: 21.2854
+  lng: 40.4067
+description:
+  tr: "Mekke'nin güneydoğusunda dağ kasabası. Peygamber Efendimizin tebliğ amacıyla gittiği ve eziyetle karşılaştığı şehir."

@@ -1,0 +1,13 @@
+id: habashah
+name:
+  tr: "Habeşistan (Aksum)"
+  en: "Abyssinia (Aksum)"
+  ar: "الحبشة"
+region:
+  tr: "Doğu Afrika"
+modernCountry: "ET"
+coordinates:
+  lat: 14.1208
+  lng: 38.7167
+description:
+  tr: "Necâşî'nin krallığı. Müslümanların ilk hicret ettiği topraklar."

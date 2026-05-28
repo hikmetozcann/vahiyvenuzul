@@ -14,6 +14,9 @@ date:
   yearFromBirth: 52
   yearFromProphethood: 13
 placeId: medina
+journey:
+  fromPlaceId: mecca
+  curve: curve
 peopleIds: [muhammad]
 relations:
   - kind: preceded-by

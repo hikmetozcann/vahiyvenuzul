@@ -13,8 +13,18 @@
   },
   "home": {
     "heroTitle": "Chronology of the Prophetic Era",
-    "heroSubtitle": "Every event, every revelation, every cause — with verified sources.",
-    "enterTimeline": "Enter Timeline"
+    "heroSubtitle": "Every event, every revelation, every cause — with verified sources. The years from Hira to Medina on a single, citation-backed timeline.",
+    "enterTimeline": "Enter Timeline",
+    "statEvents": "Events",
+    "statPlaces": "Places",
+    "statSources": "Sources",
+    "modeTimelineKicker": "Browser",
+    "modeTimelineTitle": "Chronological Timeline",
+    "modeTimelineDesc": "Events placed on a horizontal time axis, grouped by type. Zoom, filter, inspect citations per event.",
+    "modeJourneyKicker": "Cinematic",
+    "modeJourneyTitle": "Map Journey",
+    "modeJourneyDesc": "Walk through events on a stylized map — the camera glides to each location, migration routes draw themselves, narration follows.",
+    "modeOpen": "Open"
   },
   "timeline": {
     "title": "Timeline",
@@ -44,5 +54,14 @@
   "admin": {
     "title": "Admin Panel",
     "comingSoon": "Admin panel coming soon. Content is currently submitted via PR."
+  },
+  "journey": {
+    "label": "Map Journey",
+    "open": "Map Journey",
+    "play": "Play",
+    "pause": "Pause",
+    "prev": "Previous",
+    "next": "Next",
+    "close": "Close"
   }
 }

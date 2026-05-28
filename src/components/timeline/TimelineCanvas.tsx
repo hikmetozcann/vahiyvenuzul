@@ -41,7 +41,7 @@ import EventNode from "./EventNode";
 import DetailSheet from "./DetailSheet";
 import PlayerControls from "./PlayerControls";
 import FilterChips from "./FilterChips";
-import CinemaMode from "@/components/cinema/CinemaMode";
+import JourneyMode from "@/components/map/JourneyMode";
 
 type Props = {
   events: HistoricalEvent[];
@@ -82,7 +82,7 @@ export default function TimelineCanvas({ events, people, places, sources }: Prop
   const [activeId, setActiveId] = useState<string | null>(null);
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [filter, setFilter] = useState<Set<EventType> | "all">("all");
-  const [cinema, setCinema] = useState<{ active: boolean; startIndex: number }>({ active: false, startIndex: 0 });
+  const [journey, setJourney] = useState<{ active: boolean; startIndex: number }>({ active: false, startIndex: 0 });
   const reducedMotionRef = useRef(false);
 
   const range = useMemo(() => computeRange(events), [events]);
@@ -341,14 +341,15 @@ export default function TimelineCanvas({ events, people, places, sources }: Prop
         </div>
         <div className="flex justify-start sm:justify-end items-center gap-3">
           <button
-            onClick={() => setCinema({ active: true, startIndex: 0 })}
+            onClick={() => setJourney({ active: true, startIndex: 0 })}
             className="inline-flex items-center gap-2 rounded-full bg-ink text-parchment px-4 py-2 text-sm font-medium hover:bg-ink-muted transition shadow-sm"
-            aria-label="Sinema modu"
+            aria-label={t("journey.open")}
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M4 6h16v12H4zM7 8v8M17 8v8M9 8v8M11 8v8M13 8v8M15 8v8" stroke="currentColor" strokeWidth="0.5" />
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+              <path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2z" />
+              <path d="M9 3v16M15 5v16" />
             </svg>
-            Sinema
+            {t("journey.open")}
           </button>
           <PlayerControls
             playing={player.playing}
@@ -592,14 +593,14 @@ export default function TimelineCanvas({ events, people, places, sources }: Prop
         onClose={() => setActiveId(null)}
       />
 
-      {cinema.active && (
-        <CinemaMode
+      {journey.active && (
+        <JourneyMode
           events={sortedVisible}
-          startIndex={cinema.startIndex}
+          startIndex={journey.startIndex}
           people={people}
           places={places}
           sources={sources}
-          onClose={() => setCinema({ active: false, startIndex: 0 })}
+          onClose={() => setJourney({ active: false, startIndex: 0 })}
         />
       )}
     </div>

@@ -43,6 +43,19 @@ export const EventRelation = z.object({
   eventId: z.string().regex(/^[a-z0-9-]+$/),
 });
 
+/**
+ * Journey metadata for events that involve travel between places —
+ * primarily migrations, expeditions, delegations, and diplomatic visits.
+ * The map view uses this to draw the route on the basemap.
+ */
+export const Journey = z.object({
+  fromPlaceId: z.string().regex(/^[a-z0-9-]+$/),
+  via: z.array(z.string().regex(/^[a-z0-9-]+$/)).default([]),
+  /** Whether the path bends gently — purely visual hint for the renderer. */
+  curve: z.enum(["straight", "curve"]).default("curve"),
+});
+export type Journey = z.infer<typeof Journey>;
+
 export const HistoricalEvent = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   type: EventType,
@@ -50,8 +63,10 @@ export const HistoricalEvent = z.object({
   summary: LocalizedString,
   description: LocalizedRichText.optional(),
   date: HistoricalDate,
-  /** Place id reference. */
+  /** Destination / location for the event. */
   placeId: z.string().regex(/^[a-z0-9-]+$/).optional(),
+  /** Optional journey trace — origin and intermediate stops. */
+  journey: Journey.optional(),
   /** Person id references — anyone meaningfully involved. */
   peopleIds: z.array(z.string().regex(/^[a-z0-9-]+$/)).default([]),
   /**

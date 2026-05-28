@@ -36,15 +36,17 @@ export default async function EventPage({
   return (
     <>
       <SiteHeader />
-      <main className="mx-auto max-w-3xl px-6 py-12 space-y-8">
+      <main className="mx-auto max-w-2xl px-6 py-12 space-y-10">
         <header>
-          <div className="text-xs uppercase tracking-widest text-ink-muted">
-            {event.type}
+          <div className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-ink-muted">
+            <span className="inline-block w-6 h-px bg-ink-muted/40" />
+            <span>{event.type}</span>
+            {place && <><span>·</span><span>{tr(place.name, locale)}</span></>}
           </div>
-          <h1 className="mt-2 text-3xl font-semibold tracking-tight">
+          <h1 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight leading-tight">
             {tr(event.title, locale)}
           </h1>
-          <p className="mt-3 text-ink-muted">{tr(event.summary, locale)}</p>
+          <p className="mt-4 text-lg text-ink-muted leading-relaxed">{tr(event.summary, locale)}</p>
         </header>
 
         <dl className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">

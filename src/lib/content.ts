@@ -104,6 +104,16 @@ export function loadCorpus() {
         errors.push(`event ${event.id}: ayah reference to unloaded surah ${surahNum} (${ref})`);
       }
     }
+    if (event.journey) {
+      if (!placeIds.has(event.journey.fromPlaceId)) {
+        errors.push(`event ${event.id}: journey.fromPlaceId "${event.journey.fromPlaceId}" not found`);
+      }
+      for (const v of event.journey.via) {
+        if (!placeIds.has(v)) {
+          errors.push(`event ${event.id}: journey.via "${v}" not found`);
+        }
+      }
+    }
   }
 
   for (const person of people) {
