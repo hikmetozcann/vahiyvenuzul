@@ -41,6 +41,7 @@ import EventNode from "./EventNode";
 import DetailSheet from "./DetailSheet";
 import PlayerControls from "./PlayerControls";
 import FilterChips from "./FilterChips";
+import CinemaMode from "@/components/cinema/CinemaMode";
 
 type Props = {
   events: HistoricalEvent[];
@@ -81,6 +82,7 @@ export default function TimelineCanvas({ events, people, places, sources }: Prop
   const [activeId, setActiveId] = useState<string | null>(null);
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [filter, setFilter] = useState<Set<EventType> | "all">("all");
+  const [cinema, setCinema] = useState<{ active: boolean; startIndex: number }>({ active: false, startIndex: 0 });
   const reducedMotionRef = useRef(false);
 
   const range = useMemo(() => computeRange(events), [events]);
@@ -337,7 +339,17 @@ export default function TimelineCanvas({ events, people, places, sources }: Prop
         <div className="flex-1 min-w-0">
           <FilterChips active={filter} onChange={setFilter} />
         </div>
-        <div className="flex justify-start sm:justify-end">
+        <div className="flex justify-start sm:justify-end items-center gap-3">
+          <button
+            onClick={() => setCinema({ active: true, startIndex: 0 })}
+            className="inline-flex items-center gap-2 rounded-full bg-ink text-parchment px-4 py-2 text-sm font-medium hover:bg-ink-muted transition shadow-sm"
+            aria-label="Sinema modu"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4 6h16v12H4zM7 8v8M17 8v8M9 8v8M11 8v8M13 8v8M15 8v8" stroke="currentColor" strokeWidth="0.5" />
+            </svg>
+            Sinema
+          </button>
           <PlayerControls
             playing={player.playing}
             speed={player.speed}
@@ -579,6 +591,17 @@ export default function TimelineCanvas({ events, people, places, sources }: Prop
         sources={new Map(sources.map((s) => [s.id, s]))}
         onClose={() => setActiveId(null)}
       />
+
+      {cinema.active && (
+        <CinemaMode
+          events={sortedVisible}
+          startIndex={cinema.startIndex}
+          people={people}
+          places={places}
+          sources={sources}
+          onClose={() => setCinema({ active: false, startIndex: 0 })}
+        />
+      )}
     </div>
   );
 }

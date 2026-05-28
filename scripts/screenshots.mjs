@@ -7,15 +7,13 @@ const OUT = "/tmp/vahiyvenuzul-shots";
 mkdirSync(OUT, { recursive: true });
 
 const targets = [
-  { name: "01-home-tr-mobile", url: "/tr/", viewport: { width: 390, height: 844 } },
-  { name: "02-timeline-tr-mobile", url: "/tr/timeline/", viewport: { width: 390, height: 900 } },
-  { name: "03-timeline-tr-mobile-detail", url: "/tr/timeline/", viewport: { width: 390, height: 900 }, action: "openDetail" },
-  { name: "04-timeline-tr-desktop", url: "/tr/timeline/", viewport: { width: 1280, height: 800 } },
-  { name: "05-timeline-tr-desktop-zoomed", url: "/tr/timeline/", viewport: { width: 1280, height: 800 }, action: "zoomIn" },
-  { name: "06-timeline-tr-desktop-detail", url: "/tr/timeline/", viewport: { width: 1280, height: 800 }, action: "openDetail" },
-  { name: "07-timeline-tr-desktop-playing", url: "/tr/timeline/", viewport: { width: 1280, height: 800 }, action: "play" },
-  { name: "08-timeline-ar-rtl-mobile", url: "/ar/timeline/", viewport: { width: 390, height: 900 } },
-  { name: "09-timeline-en-desktop", url: "/en/timeline/", viewport: { width: 1280, height: 800 } },
+  { name: "01-timeline-tr-desktop", url: "/tr/timeline/", viewport: { width: 1280, height: 800 } },
+  { name: "02-cinema-scene-1-hira", url: "/tr/timeline/", viewport: { width: 1280, height: 800 }, action: "cinema", step: 0 },
+  { name: "03-cinema-scene-2-fatrat", url: "/tr/timeline/", viewport: { width: 1280, height: 800 }, action: "cinema", step: 1 },
+  { name: "04-cinema-scene-3-muddaththir", url: "/tr/timeline/", viewport: { width: 1280, height: 800 }, action: "cinema", step: 2 },
+  { name: "05-cinema-scene-4-hijra", url: "/tr/timeline/", viewport: { width: 1280, height: 800 }, action: "cinema", step: 3 },
+  { name: "06-cinema-mobile-hira", url: "/tr/timeline/", viewport: { width: 390, height: 844 }, action: "cinema", step: 0 },
+  { name: "07-cinema-mobile-hijra", url: "/tr/timeline/", viewport: { width: 390, height: 844 }, action: "cinema", step: 3 },
 ];
 
 const browser = await chromium.launch(
@@ -28,7 +26,31 @@ try {
     await page.goto(BASE + t.url, { waitUntil: "networkidle", timeout: 30000 });
     await page.waitForTimeout(800);
 
-    if (t.action === "openDetail") {
+    if (t.action === "cinema") {
+      // Launch cinema mode, then step to the requested scene.
+      // Scope all subsequent selectors to the cinema dialog so we don't
+      // hit the timeline player's identically-named buttons.
+      const btn = await page.$('button[aria-label="Sinema modu"]');
+      if (btn) {
+        await btn.click({ force: true });
+        await page.waitForTimeout(900);
+        const dialog = await page.$('[role="dialog"][aria-label="Sinema modu"]');
+        if (dialog) {
+          // Pause first so dwell timer doesn't auto-advance while we step
+          const pause = await dialog.$('button[aria-label="Duraklat"]');
+          if (pause) await pause.click({ force: true });
+          await page.waitForTimeout(300);
+          for (let i = 0; i < (t.step ?? 0); i++) {
+            const next = await dialog.$('button[aria-label="Sonraki"]');
+            if (next) {
+              await next.click({ force: true });
+              await page.waitForTimeout(500);
+            }
+          }
+          await page.waitForTimeout(1400);
+        }
+      }
+    } else if (t.action === "openDetail") {
       // Click first event node on the timeline (force past Playwright auto-wait)
       const nodes = await page.$$('svg [role="button"]');
       if (nodes.length > 0) {
